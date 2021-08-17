@@ -12,11 +12,11 @@
 </head>
 
 <body>
-    <form action="" class="container" name="kayboard">
+    <form class="container" name="kayboard">
         <div class="row dis">
             <input class="display" type="text" name="display" placeholder="I am a keyboard.I have some bug!" readonly>
         </div>
-        <div class="row one">
+        <div class="row">
             <input class="button" type="button" value="1" onclick="kayboard.display.value +='1'">
             <input class="button" type="button" value="2" onclick="kayboard.display.value +='2'">
             <input class="button" type="button" value="3" onclick="kayboard.display.value +='3'">
@@ -29,7 +29,7 @@
             <input class="button" type="button" value="0" onclick="kayboard.display.value +='0'">
             <input class="button" type="button" value="+" onclick="kayboard.display.value +='+'">
         </div>
-        <div class="row two">
+        <div class="row">
             <input class="button" type="button" value="Q" onclick="kayboard.display.value +='Q'">
             <input class="button" type="button" value="W" onclick="kayboard.display.value +='W'">
             <input class="button" type="button" value="E" onclick="kayboard.display.value +='E'">
@@ -42,7 +42,7 @@
             <input class="button" type="button" value="P" onclick="kayboard.display.value +='P'">
             <input class="button" type="button" value="-" onclick="kayboard.display.value +='-'">
         </div>
-        <div class="row three">
+        <div class="row">
             <input class="button" type="button" value="A" onclick="kayboard.display.value +='A'">
             <input class="button" type="button" value="S" onclick="kayboard.display.value +='S'">
             <input class="button" type="button" value="D" onclick="kayboard.display.value +='D'">
@@ -55,7 +55,7 @@
             <input class="button" type="button" value="="
                 onclick="kayboard.display.value = eval(kayboard.display.value)">
         </div>
-        <div class="row four">
+        <div class="row">
             <input class="button bti" type="button" value="Shift" onclick="kayboard.display.value +='Bug'">
             <input class="button" type="button" value="Z" onclick="kayboard.display.value +='Z'">
             <input class="button" type="button" value="X" onclick="kayboard.display.value +='X'">
@@ -64,16 +64,17 @@
             <input class="button" type="button" value="B" onclick="kayboard.display.value +='B'">
             <input class="button" type="button" value="N" onclick="kayboard.display.value +='N'">
             <input class="button" type="button" value="M" onclick="kayboard.display.value +='M'">
-            <input class="button reset" type="button" value="Reset" onclick="kayboard.display.value =''">
+            <input class="button reset" type="button" value="Clear" onclick="kayboard.display.value =''">
             <input class="button bti" type="button" value="Shift" onclick="kayboard.display.value +='Bug'">
         </div>
-        <div class="row five">
+        <div class="row">
             <input class="button bti" type="button" value="Sym" onclick="kayboard.display.value +='Bug'">
             <input class="button" type="button" value="Ctrl" onclick="kayboard.display.value +='Bug'">
             <input class="button" type="button" value="," onclick="kayboard.display.value +=','">
             <input class="button space" type="button " value="Space" onclick="kayboard.display.value +=' '">
             <input class="button" type="button" value="." onclick="kayboard.display.value +='.'">
-            <input class="button enter" type="button" value="ENTER" onclick="kayboard.display.value +='Bug'">
+            <input class="button enter" type="button" value="Enter"
+                onclick="kayboard.display.value = eval(kayboard.display.value)">
         </div>
     </form>
 
