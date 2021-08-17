@@ -12,7 +12,7 @@ body{
     display: flex;
     justify-content: center;
 }
-.dis{
+.item {
     height: 170px;
 }
 .display {
@@ -53,29 +53,28 @@ body{
     transition: all .1s;
 }
 
+.space,
+.enter,
+.reset,
+.bti {
+    border-radius: 10px;
+}
+
 .bti{
     width: 90px;
-    border-radius: 15%;
-    -webkit-border-radius: 15%;
-    -moz-border-radius: 15%;
-    -ms-border-radius: 15%;
-    -o-border-radius: 15%;
 }
 
 .space{
     width: 350px;
-    border-radius: 10px;
 }
 
 .enter{
     width: 100px;
-    border-radius: 10px;
     background-color: rgb(243, 11, 11);
     color: #fff;
 }
 .reset {
     width: 90px;
-    border-radius: 10px;
     background-color: #000;
     color: #fff;
 }
