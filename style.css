@@ -2,42 +2,68 @@ body{
     background: rgb(69, 219, 219) !important;
 }
 .container{
-        margin: 150px auto;
-        width: 890px;
+        margin:  auto;
+        width: 1000px;
 }
 .row{
     width: 100%;
     height: 70px;
+    display: flex;
+    justify-content: center;
+}
+.dis{
+    height: 170px;
 }
 .one, .five{
     margin-top: 15px;
 }
 .two{
-    margin: 15px 0 0 27px;
+    margin: 15px 0 0 0;
 }
 .three{
-    margin: 15px 0 0 50px;
+    margin: 15px 0 0 0;
 }
 
 .four{
     margin: 15px 0 0 0;
 }
-
-button{
+.display {
+    width: 100%;
+    height: 170px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(146, 131, 131) inset, -5px -5px 10px rgb(216, 200, 200) inset;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-align: right;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+.button {
     width: 70px;
     height: 70px;
+    cursor: pointer;
     margin-left: 10px;
     border: none;
     outline: none;
     border-radius: 20%;
     box-shadow: 5px 5px 10px rgb(48, 45, 45),    -5px -5px 10px rgb(216, 200, 200);
-    background: rgb(197, 223, 223) !important;
+    background: rgb(222, 245, 245) !important;
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
     transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
 }
 
-button:hover{
+.button:hover{
     transform: scale(1.1);
     transition: all .1s;
 }
@@ -58,5 +84,10 @@ button:hover{
 
 .enter{
     width: 100px;
+    border-radius: 10px;
+}
+.reset {
+    width: 90px;
+    font-size:25px ;
     border-radius: 10px;
 }

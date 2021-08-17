@@ -1,70 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Keyboard</title>
+    <link rel="shortcut icon" href="./image/icon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
+    <form action="" class="container" name="kayboard">
+        <div class="row dis">
+            <input class="display" type="text" name="display" placeholder="I am a keyboard.I have some bug!" readonly>
+        </div>
         <div class="row one">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>0</button>
+            <input class="button" type="button" value="1" onclick="kayboard.display.value +='1'">
+            <input class="button" type="button" value="2" onclick="kayboard.display.value +='2'">
+            <input class="button" type="button" value="3" onclick="kayboard.display.value +='3'">
+            <input class="button" type="button" value="4" onclick="kayboard.display.value +='4'">
+            <input class="button" type="button" value="5" onclick="kayboard.display.value +='5'">
+            <input class="button" type="button" value="6" onclick="kayboard.display.value +='6'">
+            <input class="button" type="button" value="7" onclick="kayboard.display.value +='7'">
+            <input class="button" type="button" value="8" onclick="kayboard.display.value +='8'">
+            <input class="button" type="button" value="9" onclick="kayboard.display.value +='9'">
+            <input class="button" type="button" value="0" onclick="kayboard.display.value +='0'">
+            <input class="button" type="button" value="+" onclick="kayboard.display.value +='+'">
         </div>
         <div class="row two">
-            <button>Q</button>
-            <button>W</button>
-            <button>E</button>
-            <button>R</button>
-            <button>T</button>
-            <button>Y</button>
-            <button>U</button>
-            <button>I</button>
-            <button>O</button>
-            <button>P</button>
+            <input class="button" type="button" value="Q" onclick="kayboard.display.value +='Q'">
+            <input class="button" type="button" value="W" onclick="kayboard.display.value +='W'">
+            <input class="button" type="button" value="E" onclick="kayboard.display.value +='E'">
+            <input class="button" type="button" value="R" onclick="kayboard.display.value +='R'">
+            <input class="button" type="button" value="T" onclick="kayboard.display.value +='T'">
+            <input class="button" type="button" value="Y" onclick="kayboard.display.value +='Y'">
+            <input class="button" type="button" value="U" onclick="kayboard.display.value +='U'">
+            <input class="button" type="button" value="I" onclick="kayboard.display.value +='I'">
+            <input class="button" type="button" value="O" onclick="kayboard.display.value +='O'">
+            <input class="button" type="button" value="P" onclick="kayboard.display.value +='P'">
+            <input class="button" type="button" value="-" onclick="kayboard.display.value +='-'">
         </div>
         <div class="row three">
-            <button>A</button>
-            <button>S</button>
-            <button>D</button>
-            <button>F</button>
-            <button>G</button>
-            <button>H</button>
-            <button>J</button>
-            <button>K</button>
-            <button>L</button>
+            <input class="button" type="button" value="A" onclick="kayboard.display.value +='A'">
+            <input class="button" type="button" value="S" onclick="kayboard.display.value +='S'">
+            <input class="button" type="button" value="D" onclick="kayboard.display.value +='D'">
+            <input class="button" type="button" value="F" onclick="kayboard.display.value +='F'">
+            <input class="button" type="button" value="G" onclick="kayboard.display.value +='G'">
+            <input class="button" type="button" value="H" onclick="kayboard.display.value +='H'">
+            <input class="button" type="button" value="J" onclick="kayboard.display.value +='J'">
+            <input class="button" type="button" value="K" onclick="kayboard.display.value +='K'">
+            <input class="button" type="button" value="L" onclick="kayboard.display.value +='L'">
+            <input class="button" type="button" value="="
+                onclick="kayboard.display.value = eval(kayboard.display.value)">
         </div>
         <div class="row four">
-            <button class="bti">Shift</button>
-            <button>Z</button>
-            <button>X</button>
-            <button>C</button>
-            <button>V</button>
-            <button>B</button>
-            <button>N</button>
-            <button>M</button>
-            <button class="bti">Shift</button>
+            <input class="button bti" type="button" value="Shift" onclick="kayboard.display.value +='Bug'">
+            <input class="button" type="button" value="Z" onclick="kayboard.display.value +='Z'">
+            <input class="button" type="button" value="X" onclick="kayboard.display.value +='X'">
+            <input class="button" type="button" value="C" onclick="kayboard.display.value +='C'">
+            <input class="button" type="button" value="V" onclick="kayboard.display.value +='V'">
+            <input class="button" type="button" value="B" onclick="kayboard.display.value +='B'">
+            <input class="button" type="button" value="N" onclick="kayboard.display.value +='N'">
+            <input class="button" type="button" value="M" onclick="kayboard.display.value +='M'">
+            <input class="button reset" type="button" value="Reset" onclick="kayboard.display.value =''">
+            <input class="button bti" type="button" value="Shift" onclick="kayboard.display.value +='Bug'">
         </div>
         <div class="row five">
-            <button class="bti">Sym</button>
-            <button>Ctrl</button>
-            <button>,</button>
-            <button class="space">Space</button>
-            <button>.</button>
-            <button class="enter">Enter</button>
+            <input class="button bti" type="button" value="Sym" onclick="kayboard.display.value +='Bug'">
+            <input class="button" type="button" value="Ctrl" onclick="kayboard.display.value +='Bug'">
+            <input class="button" type="button" value="," onclick="kayboard.display.value +=','">
+            <input class="button space" type="button " value="Space" onclick="kayboard.display.value +=' '">
+            <input class="button" type="button" value="." onclick="kayboard.display.value +='.'">
+            <input class="button enter" type="button" value="ENTER" onclick="kayboard.display.value +='Bug'">
         </div>
-    </div>
+    </form>
 
 </body>
+
 </html>
