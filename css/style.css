@@ -62,7 +62,7 @@ body{
 }
 
 .bti{
-    width: 120px;
+    width: 150px;
 }
 
 .space{
@@ -70,12 +70,12 @@ body{
 }
 
 .enter{
-    width: 100px;
+    width: 190px;
     background-color: rgb(243, 11, 11);
     color: #fff;
 }
 .reset {
-    width: 90px;
+    width: 170px;
     background-color: #000;
     color: #fff;
 }
